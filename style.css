@@ -143,6 +143,11 @@ body{
     justify-content: space-evenly;
     font-size: 10px;    
 }
+.bloco-rodape nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;       
+}
 .menu-rodape {
     display: flex;
     flex-direction: row;
@@ -165,7 +170,13 @@ body{
         width: 300px;
     }
     .bloco-rodape {
-        flex-direction: column-reverse;        
+        flex-direction: column;                
+    }
+    .bloco-rodape nav {
+        flex-direction: column;              
+    }
+    .menu-rodape {
+        margin: auto;
     }
     .direitos-reservados{
         padding-bottom: 10px ;
@@ -183,9 +194,6 @@ body{
     .instagram-continue {
         width: 350px;
     }
-    .menu-rodape {
-        display: none;
-    }
 }
 
 @media ( max-width: 600px) {
@@ -194,5 +202,8 @@ body{
     }
     .grupo {
         border: transparent;
+    }
+    .menu-rodape {
+        display: none;
     }
 }
